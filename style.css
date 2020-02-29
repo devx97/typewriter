@@ -1,0 +1,11 @@
+body {
+  background-image: linear-gradient(to right, coral, lightcoral);
+}
+
+span {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6rem;
+}
