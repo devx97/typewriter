@@ -12,12 +12,12 @@ class TypeWriter {
   type = () => {
     const currentWordIndex = this.counter % this.greetings.length
     const currentWord = this.greetings[currentWordIndex]
+    document.title = currentWord
 
     let charDifference = this.deleting ? -1 : 1
     this.currentText = currentWord.substring(0, this.currentText.length + charDifference);
 
     this.element.innerHTML = `<span id="typewriter">${this.currentText}</span>`
-    document.title = this.currentText
 
     let typingDelay = this.deleting ? 50 : 200
 
